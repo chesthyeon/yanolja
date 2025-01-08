@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>찜리스트</title>
+</head>
+<body>
+  <h1>찜리스트</h1>
+
+  <!-- 찜한 항목 목록 -->
+  <ul id="wishlist">
+    <li>
+      <h2>호텔 이름 1</h2>
+      <p>위치: 서울 강남구</p>
+      <p>가격: 120,000원</p>
+      <button onclick="removeItem(this)">삭제</button>
+    </li>
+    <li>
+      <h2>펜션 이름 2</h2>
+      <p>위치: 강원도 강릉시</p>
+      <p>가격: 150,000원</p>
+      <button onclick="removeItem(this)">삭제</button>
+    </li>
+    <li>
+      <h2>액티비티 이름 3</h2>
+      <p>위치: 제주도 서귀포시</p>
+      <p>가격: 50,000원</p>
+      <button onclick="removeItem(this)">삭제</button>
+    </li>
+  </ul>
+
+  <!-- 스크립트 -->
+  <script>
+    // 찜한 항목 삭제 함수
+    function removeItem(button) {
+      const listItem = button.parentElement; // 해당 버튼의 부모 요소(li) 찾기
+      listItem.remove(); // 해당 항목 삭제
+    }
+  </script>
+</body>
+</html>
