@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>장바구니</title>
+</head>
+<body>
+<header>
+  <h1>장바구니</h1>
+</header>
+<main>
+  <section>
+    <h2>담은 상품 목록</h2>
+    <table border="1">
+      <thead>
+      <tr>
+        <th>상품명</th>
+        <th>옵션</th>
+        <th>수량</th>
+        <th>가격</th>
+        <th>총액</th>
+        <th>관리</th>
+      </tr>
+      </thead>
+      <tbody id="cart-items">
+      <tr>
+        <td>숙소 이름</td>
+        <td>2박 3일</td>
+        <td>1</td>
+        <td>₩100,000</td>
+        <td>₩100,000</td>
+        <td>
+          <button>수정</button>
+          <button>삭제</button>
+        </td>
+      </tr>
+      <tr>
+        <td>레저 활동 이름</td>
+        <td>패키지 A</td>
+        <td>2</td>
+        <td>₩50,000</td>
+        <td>₩100,000</td>
+        <td>
+          <button>수정</button>
+          <button>삭제</button>
+        </td>
+      </tr>
+      </tbody>
+    </table>
+  </section>
+  <section>
+    <h2>결제 정보</h2>
+    <p>총 상품 금액: <span id="total-price">₩200,000</span></p>
+    <p>할인 금액: <span id="discount-price">₩0</span></p>
+    <p>결제 금액: <span id="final-price">₩200,000</span></p>
+    <button>결제하기</button>
+  </section>
+</main>
+</body>
+</html>
